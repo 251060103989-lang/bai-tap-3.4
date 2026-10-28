@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<!-- Gọi hàm addTabIndex() ngay khi trang tải xong (onload) -->
+<body onload="addTabIndex()">
+
+  <header>
+    <h1>Thư Viện Ảnh Tương Tác Cải Tiến</h1>
+  </header>
+
+  <main>
+    <!-- Khối hiển thị chính -->
+    <div id="image">
+      Di chuột qua hoặc dùng phím Tab để chọn ảnh bên dưới.
+    </div>
+
+    <!-- 6 hình ảnh xem trước -->
+    <div class="gallery">
+      <img class="preview" 
+           alt="Phong cảnh núi đồi hùng vĩ" 
+           src="https://picsum.photos/id/1018/600/400" 
+           onmouseover="upDate(this)" 
+           onmouseleave="undo()" 
+           onfocus="upDate(this)" 
+           onblur="undo()">
+
+      <img class="preview" 
+           alt="Thành phố lên đèn về đêm" 
+           src="https://picsum.photos/id/1015/600/400" 
+           onmouseover="upDate(this)" 
+           onmouseleave="undo()" 
+           onfocus="upDate(this)" 
+           onblur="undo()">
+
+      <img class="preview" 
+           alt="Rừng cây mùa thu rực rỡ" 
+           src="https://picsum.photos/id/1016/600/400" 
+           onmouseover="upDate(this)" 
+           onmouseleave="undo()" 
+           onfocus="upDate(this)" 
+           onblur="undo()">
+
+      <img class="preview" 
+           alt="Bãi biển bình minh yên bình" 
+           src="https://picsum.photos/id/1025/600/400" 
+           onmouseover="upDate(this)" 
+           onmouseleave="undo()" 
+           onfocus="upDate(this)" 
+           onblur="undo()">
+
+      <img class="preview" 
+           alt="Con đường nhỏ trong rừng" 
+           src="https://picsum.photos/id/1039/600/400" 
+           onmouseover="upDate(this)" 
+           onmouseleave="undo()" 
+           onfocus="upDate(this)" 
+           onblur="undo()">
+
+      <img class="preview" 
+           alt="Dòng sông em đềm uốn lượn" 
+           src="https://picsum.photos/id/1043/600/400" 
+           onmouseover="upDate(this)" 
+           onmouseleave="undo()" 
+           onfocus="upDate(this)" 
+           onblur="undo()">
+    </div>
+  </main>
+
+</body>
+</html>
